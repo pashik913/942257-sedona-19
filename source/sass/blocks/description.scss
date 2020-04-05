@@ -1,0 +1,31 @@
+.description {
+  @include reset-list;
+
+  min-height: 503px;
+  background-color: #eeeeee;
+}
+
+.description__title {
+  padding: 0;
+}
+
+.description__item {
+  margin: 0 20px;
+  padding: 33px 0;
+
+  border-bottom: 1px solid #d6d6d6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.description__text {
+  margin: 0;
+  padding: 0 12px;
+}
+
+.description__serial-number,
+.description__text {
+  color: #333333;
+}

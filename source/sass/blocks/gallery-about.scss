@@ -1,0 +1,21 @@
+.gallery-about {
+  margin-bottom: 33px;
+}
+
+.gallery-about__wrapper {
+  text-align: center;
+}
+
+.gallery-about__title {
+  @include reset-h;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.gallery-about__text {
+  margin: 0;
+  padding: 0px 24px;
+}

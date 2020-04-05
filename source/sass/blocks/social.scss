@@ -1,0 +1,47 @@
+.social {
+  @include reset-list;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+
+.social__item {
+  @include back-color;
+  margin-right: 6px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  min-height: 48px;
+}
+
+.social__copyright-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 23px;
+  color: #000000;
+}
+
+.social__copyright-text {
+  display: block;
+  padding-right: 11px;
+
+  line-height: 26px;
+}
+
+.social__copyright-img {
+  display: block;
+}
+
+.social__img {
+  fill: #ffffff;
+}

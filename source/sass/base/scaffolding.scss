@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  font-family: "PtSans", "Arial", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,20 @@
+.site-list {
+  @include back-color;
+  @include reset-list;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.site-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
+  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
+}
+
+.site-list__link {
+  color: #ffffff;
+}

@@ -1,0 +1,26 @@
+.index-info__title {
+  @include reset-h;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 43px;
+}
+
+.index-info__number,
+.index-info__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: center;
+  display: block;
+}
+
+.index-info__number {
+  padding-bottom: 10px;
+}
+
+.index-info__text {
+  margin-bottom: 25px;
+}

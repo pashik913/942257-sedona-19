@@ -1,0 +1,88 @@
+.page-header {
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+.page-header__toggle {
+  top: -75px;
+  right: -130px;
+  position: relative;
+  width: 23px;
+  height: 21px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.page-header__toggle-line {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 23px;
+  height: 3px;
+  font-size: 0;
+
+  @include back-color;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 23px;
+    height: 3px;
+    @include back-color;
+  }
+
+  &::after {
+    top: 7px;
+  }
+
+  &::before {
+    top: -7px;
+  }
+}
+
+.page-header__back-wrapper {
+  position: relative;
+  margin-top: -62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 85px;
+
+  @include back-color;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 26px;
+    bottom: 0;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: repeat;
+    background-position: top center;
+  }
+}
+
+.page-header__index-back-img {
+  display: block;
+  width: 281px;
+  height: 214px;
+}
+
+.page-header__back-wrapper--padding {
+  padding-top: 52px;
+  padding-bottom: 67px;
+  background-position: bottom center;
+}
+
+.page-header__back-img {
+  width: 229px;
+  height: 39px;
+}

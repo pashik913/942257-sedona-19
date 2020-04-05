@@ -1,0 +1,29 @@
+.advantages {
+  margin-bottom: 29px;
+}
+
+.advantages__wrapper {
+  text-align: center;
+}
+
+
+
+.advantages__title {
+  @include reset-h;
+
+  padding: 0 28px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.advantages__text {
+  padding: 0px 10px;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #333333;
+}

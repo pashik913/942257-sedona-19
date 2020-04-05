@@ -1,0 +1,58 @@
+.about-list {
+  @include reset-list;
+  padding-top: 41px;
+  padding-left: 69px;
+}
+
+.about-list__title {
+  @include reset-h;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.about-list__item {
+  padding-bottom: 28px;
+  position: relative;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -62px;
+    width: 37px;
+    height: 36px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-list__item--gift {
+  &::before {
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+.about-list__item--burger {
+  &::before {
+    width: 40px;
+    height: 37px;
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.about-list__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}

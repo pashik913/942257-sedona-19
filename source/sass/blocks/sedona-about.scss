@@ -1,0 +1,30 @@
+.sedona-about__wrapper {
+  @include back-color;
+  position: relative;
+  min-height: 211px;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: repeat;
+    background-position: top center;
+  }
+}
+
+.sedona-about__title {
+  @include reset-h;
+
+  padding-top: 61px;
+}
+
+.sedona-about__text {
+  padding: 0 20px;
+}
+
+.sedona-about__img {
+  display: block;
+}

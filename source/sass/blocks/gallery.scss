@@ -1,0 +1,41 @@
+.gallery__list {
+  @include reset-list;
+
+  &:last-child {
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.gallery__item {
+  border-top: 1px solid #d6d6d6;
+  padding: 22px 20px;
+}
+
+.gallery__title {
+  @include reset-h;
+}
+
+.gallery__author {
+  display: block;
+  text-transform: none;
+
+  padding-bottom: 19px;
+}
+
+.gallery__like-number {
+  position: relative;
+  font-weight: bold;
+  padding-left: 37px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+  }
+}

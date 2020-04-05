@@ -1,0 +1,24 @@
+.sight {
+  margin-bottom: 33px;
+}
+
+.sight__wrapper {
+  @include back-color;
+
+  color: #ffffff;
+  min-height: 191px;
+}
+
+.sight__title {
+  @include reset-h;
+  padding-top: 45px;
+}
+
+.sight__text {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.sight__img {
+  display: block;
+}

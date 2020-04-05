@@ -1,0 +1,14 @@
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-h {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin back-color {
+  background-color: #81b3d2;
+}
