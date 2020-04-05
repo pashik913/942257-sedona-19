@@ -6,8 +6,6 @@
   text-align: center;
 }
 
-
-
 .advantages__title {
   @include reset-h;
 
@@ -20,7 +18,7 @@
 }
 
 .advantages__text {
-  padding: 0px 10px;
+  padding: 0 10px;
   padding-top: 20px;
   font-size: 14px;
   line-height: 26px;

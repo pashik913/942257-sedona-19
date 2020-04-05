@@ -26,12 +26,12 @@
 
   &::after,
   &::before {
+    @include back-color;
     position: absolute;
     content: "";
     left: 0;
     width: 23px;
     height: 3px;
-    @include back-color;
   }
 
   &::after {

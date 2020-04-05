@@ -10,6 +10,7 @@
 .social__item {
   @include back-color;
   margin-right: 6px;
+
   &:last-child {
     margin-right: 0;
   }
