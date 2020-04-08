@@ -1,3 +1,45 @@
-.features {
-  margin-bottom: 42px;
+.features--bot-margin {
+  margin-bottom: 33px;
+}
+
+.features__wrapper {
+  background-color: $theme-color;
+
+  text-align: center;
+  padding: 45px 20px;
+
+  &--bg-triangle {
+    position: relative;
+    padding-top: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 37px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      top: -1px;
+      transform: translate(-50%);
+    }
+  }
+}
+
+.features__img {
+  width: 100%;
+  display: block;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features__serial-number {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.features__list {
+  @include reset-list;
 }

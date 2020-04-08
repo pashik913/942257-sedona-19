@@ -8,11 +8,10 @@
 }
 
 .social__item {
-  @include back-color;
-  margin-right: 6px;
+  background-color: $theme-color;
 
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 6px;
   }
 }
 
@@ -28,21 +27,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 23px;
   color: #000000;
-}
-
-.social__copyright-text {
-  display: block;
-  padding-right: 11px;
-
-  line-height: 26px;
 }
 
 .social__copyright-img {
   display: block;
-}
 
-.social__img {
-  fill: #ffffff;
+  margin-left: 11px;
 }

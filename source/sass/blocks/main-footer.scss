@@ -1,17 +1,16 @@
-.main-footer {
-  margin-top: 41px;
-}
-
 .main-footer__wrapper {
   text-align: center;
+  padding: 0 20px;
+  padding-top: 41px;
+  padding-bottom: 23px;
 }
 
 .main-footer__invite-text {
   display: block;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 
-  padding-bottom: 41px;
+  margin-bottom: 41px;
 }

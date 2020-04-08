@@ -1,27 +1,25 @@
-.advantages {
+.advantages--bot-margin {
   margin-bottom: 29px;
 }
 
 .advantages__wrapper {
   text-align: center;
+  padding: 10px;
 }
 
 .advantages__title {
-  @include reset-h;
-
-  padding: 0 28px;
-
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 
 .advantages__text {
-  padding: 0 10px;
-  padding-top: 20px;
+  margin: 0;
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;
+  font-weight: 500;
   color: #333333;
 }

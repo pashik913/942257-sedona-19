@@ -12,7 +12,7 @@
 }
 
 .gallery__title {
-  @include reset-h;
+  margin: 0;
 }
 
 .gallery__author {
@@ -24,7 +24,7 @@
 
 .gallery__like-number {
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
   padding-left: 37px;
 
   &::before {
