@@ -1,0 +1,56 @@
+.about-list {
+  padding: 41px 20px;
+}
+
+.about-list__title {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.about-list__item {
+  position: relative;
+  padding-left: 59px;
+  padding-top: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--house::before {
+    width: 37px;
+    height: 36px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gift::before {
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--burger::before {
+    width: 40px;
+    height: 37px;
+    background-image: url("../img/icon-burger.svg");
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.about-list__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
