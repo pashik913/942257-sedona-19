@@ -47,3 +47,22 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__item {
+    border: 0;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  .gallery__item--first-item {
+    flex-basis: 100%;
+  }
+}
