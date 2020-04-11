@@ -18,3 +18,19 @@
   color: #ffffff;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    background-color: transparent;
+    font-size: 14px;
+  }
+
+  .site-list__link {
+    color: #000000;
+  }
+
+  .site-list--first-column {
+    order: -1;
+  }
+}

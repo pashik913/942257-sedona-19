@@ -11,13 +11,15 @@
   <body>
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--first-column">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
+        </ul>
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
@@ -52,14 +54,16 @@
       </section>
 
       <section class="features">
-        <div class="features__wrapper features__wrapper--bg-triangle container">
-          <h2 class="features__title">Настоящий городок</h2>
-          <span class="features__serial-number">— № 1 —</span>
-          <span class="features__text">
-            Седона не аттаркион для туристов, там течет своя жизнь
-          </span>
+        <div class="features__column-wrapper">
+          <div class="features__wrapper features__wrapper--bg-triangle container">
+            <h2 class="features__title">Настоящий городок</h2>
+            <span class="features__serial-number">— № 1 —</span>
+            <span class="features__text">
+              Седона не аттаркион для туристов, там течет своя жизнь
+            </span>
+          </div>
+          <img  width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
         </div>
-        <img  width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
         <ul class="features__list about-list">
           <li class="about-list__item about-list__item--house">
             <h3 class="about-list__title">Жилье</h3>
@@ -83,14 +87,16 @@
       </section>
 
       <section class="features features--bot-margin">
-        <div class="features__wrapper">
-          <h2 class="features__title">Там есть мост дьявола</h2>
-          <span class="features__serial-number">— № 2 —</span>
-          <span class="features__text">
-            Да, по нему можно пройти! Если вы осмелитесь, конечно
-          </span>
+        <div class="features__column-wrapper features__column-wrapper--reverse">
+          <div class="features__wrapper">
+            <h2 class="features__title">Там есть мост дьявола</h2>
+            <span class="features__serial-number">— № 2 —</span>
+            <span class="features__text">
+              Да, по нему можно пройти! Если вы осмелитесь, конечно
+            </span>
+          </div>
+          <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
         </div>
-        <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
         <ol class="features__list description-list">
           <li class="description-list__item">
             <h2 class="description-list__title">Небольшая площидь</h2>

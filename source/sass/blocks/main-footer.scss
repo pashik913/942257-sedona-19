@@ -14,3 +14,11 @@
 
   margin-bottom: 41px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}

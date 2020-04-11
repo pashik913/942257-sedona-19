@@ -38,3 +38,9 @@
   display: block;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .description-list__item:not(:last-child) {
+    border: 0;
+  }
+}

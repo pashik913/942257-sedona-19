@@ -85,3 +85,13 @@
   width: 229px;
   height: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__back-wrapper {
+    margin-top: -30px;
+  }
+}
