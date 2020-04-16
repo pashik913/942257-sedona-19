@@ -29,6 +29,12 @@
       margin-left: 156px;
     }
   }
+
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      margin-left: 244px;
+    }
+  }
 }
 
 .site-list__link {
@@ -41,5 +47,9 @@
     min-width: 153px;
 
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 239px;
   }
 }
