@@ -28,9 +28,7 @@
     @media (min-width: $tablet-width) {
       margin-left: 156px;
     }
-  }
 
-  &:nth-child(3) {
     @media (min-width: $desktop-width) {
       margin-left: 244px;
     }
@@ -41,7 +39,7 @@
   display: block;
   padding: 15px;
 
-  color: #fff;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     min-width: 153px;
