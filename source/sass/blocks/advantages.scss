@@ -4,7 +4,44 @@
 
 .advantages__wrapper {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+}
+
+.advantages__bg {
+  padding: 0 20px;
+  margin-bottom: 44px;
+  text-align: center;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  position: relative;
+  z-index: -1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+  }
+}
+
+.advantages__bg--position {
+  background-position: bottom center;
+}
+
+.advantages__title-img {
+  padding: 90px 0 72px 0;
+}
+
+.advantages__title-img--padding {
+  padding: 52px 0 54px 0;
 }
 
 .advantages__title {

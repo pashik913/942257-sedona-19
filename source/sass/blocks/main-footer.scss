@@ -3,6 +3,12 @@
   padding: 0 20px;
   padding-top: 41px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .main-footer__invite-text {
@@ -13,4 +19,8 @@
   color: #000000;
 
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

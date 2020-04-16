@@ -43,3 +43,28 @@
 .features__list {
   @include reset-list;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features__column-wrapper {
+    display: flex;
+  }
+
+  .features__wrapper--bg-triangle {
+    &::before {
+      content: none;
+    }
+  }
+
+  .features__list {
+    display: flex;
+  }
+
+  .features__column-wrapper--reverse {
+    flex-direction: row-reverse;
+  }
+}
