@@ -35,6 +35,14 @@
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.gallery__like-wrapper {
+  display: flex;
 }
 
 .gallery__link {
@@ -55,30 +63,43 @@
   text-transform: none;
 
   margin-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__like-number {
   position: relative;
   font-weight: 700;
-  padding-left: 37px;
+  padding-left: 14px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/icon-like.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.3;
+.gallery__like-icon {
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+    fill: #ffffff;
   }
 }
 
 .gallery__text-wrapper {
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
-
     padding: 21px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 20px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
   }
 }

@@ -29,7 +29,11 @@
 
       <div class="page-header__block">
         <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
-          <img class="page-header__logo" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          <picture>
+            <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+            <img class="page-header__logo" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          </picture>
         </a>
 
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">
@@ -39,6 +43,12 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Форма отзыва о городке Седона</h1>
+      <section class="form gallery-about">
+        <div class="gallery-about__bg advantages__bg advantages__bg--position">
+          <img class="advantages__title-img advantages__title-img--padding" width="281" height="214" class="page-header__back-img" src="img/text-sedona.svg" alt="Гранд каньон отдыхает">
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
