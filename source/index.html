@@ -29,6 +29,8 @@
 
       <div class="page-header__block">
         <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
           <img class="page-header__logo" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
         </a>
 
@@ -57,14 +59,18 @@
 
       <section class="features">
         <div class="features__column-wrapper">
-          <div class="features__wrapper features__wrapper--bg-triangle container">
+          <div class="features__wrapper features__wrapper--bg-triangle">
             <h2 class="features__title">Настоящий городок</h2>
             <span class="features__serial-number">— № 1 —</span>
             <span class="features__text">
               Седона не аттаркион для туристов, там течет своя жизнь
             </span>
           </div>
-          <img  width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+          <picture class="features__picture-wrapper">
+            <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+            <img width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+          </picture>
         </div>
         <ul class="features__list about-list">
           <li class="about-list__item about-list__item--house">
@@ -82,7 +88,7 @@
           <li class="about-list__item about-list__item--burger">
             <h3 class="about-list__title">Еда</h3>
             <span class="about-list__text">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы не разочаруетесь!
             </span>
           </li>
         </ul>
@@ -91,17 +97,21 @@
       <section class="features features--bot-margin">
         <div class="features__column-wrapper features__column-wrapper--reverse">
           <div class="features__wrapper">
-            <h2 class="features__title">Там есть мост дьявола</h2>
+            <h2 class="features__title features__title--padding">Там есть мост дьявола</h2>
             <span class="features__serial-number">— № 2 —</span>
             <span class="features__text">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </span>
           </div>
-          <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          <picture class="features__picture-wrapper">
+            <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          </picture>
         </div>
         <ol class="features__list description-list">
           <li class="description-list__item">
-            <h2 class="description-list__title">Небольшая площидь</h2>
+            <h2 class="description-list__title">Небольшая площадь</h2>
             <span class="description-list__serial-number">— № 3 —</span>
             <p class="description-list__text">
               Все интересные места находятся очень близко
@@ -109,7 +119,7 @@
           </li>
 
           <li class="description-list__item">
-            <h2 class="description-list__title">Небольшая площидь</h2>
+            <h2 class="description-list__title">Красивая дорога</h2>
             <span class="description-list__serial-number">— № 4 —</span>
             <p class="description-list__text">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -117,7 +127,7 @@
           </li>
 
           <li class="description-list__item description-list__item--no-bot-margin">
-            <h2 class="description-list__title">Небольшая площидь</h2>
+            <h2 class="description-list__title">Мало туристов</h2>
             <span class="description-list__serial-number">— № 5 —</span>
             <p class="description-list__text description-list__text--no-bot-margin">
               Большинство едет в гранд каньон и толпится там
@@ -137,7 +147,11 @@
           <a class="reservation__link" href="#">Найти гостиницу</a>
         </div>
         <div class="reservation__map-wrapper">
-          <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" alt="Мы находимся здесь" width="320" height="350">
+          <picture>
+            <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" alt="Мы находимся здесь" width="320" height="350">
+          </picture>
         </div>
       </section>
     </main>

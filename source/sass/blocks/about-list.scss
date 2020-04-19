@@ -1,5 +1,10 @@
 .about-list {
   padding: 41px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 50px;
+    padding-top: 85px;
+  }
 }
 
 .about-list__title {
@@ -10,12 +15,24 @@
   font-weight: 700;
   color: #000000;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .about-list__item {
   position: relative;
   padding-left: 59px;
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+
+    padding-left: 0;
+    padding: 0 20px;
+    padding-top: 33px;
+  }
 
   &::before {
     position: absolute;
@@ -24,28 +41,60 @@
     left: 0;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &--house::before {
     width: 37px;
     height: 36px;
     background-image: url("../img/icon-house.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+    }
   }
 
   &--gift::before {
     width: 32px;
     height: 38px;
     background-image: url("../img/icon-gift.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 63px;
+      height: 75px;
+      order: 1;
+    }
   }
 
   &--burger::before {
     width: 40px;
     height: 37px;
     background-image: url("../img/icon-burger.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 68px;
+    }
   }
+
+  // &--burger {
+  //   @media (min-width: $tablet-width) {
+  //     padding: 0 31px;
+  //   }
+  // }
 
   &:not(:last-child) {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 

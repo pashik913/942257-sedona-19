@@ -1,9 +1,17 @@
 .gallery-about {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .gallery-about__wrapper {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 170px;
+  }
 }
 
 .gallery-about__title {
@@ -13,9 +21,17 @@
   line-height: 26px;
   font-weight: 700;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .gallery-about__text {
   margin: 0;
   padding: 0 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
