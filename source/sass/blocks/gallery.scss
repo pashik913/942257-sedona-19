@@ -1,3 +1,13 @@
+.gallery {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .gallery__list {
   @include reset-list;
 
@@ -22,22 +32,20 @@
   @media (min-width: $tablet-width) {
     border: 0;
     padding: 0;
-  }
 
-  &--first-item {
-    @media (min-width: $tablet-width) {
-      flex-basis: 100%;
+    &:first-child {
+      width: 100%;
     }
-  }
-}
 
-.gallery {
-  @media (min-width: $tablet-width) {
-    padding: 0 60px;
+    &:not(:first-child) {
+      width: 50%;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    &:not(:first-child) {
+      width: 33.3%;
+    }
   }
 }
 

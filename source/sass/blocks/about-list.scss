@@ -82,12 +82,6 @@
     }
   }
 
-  // &--burger {
-  //   @media (min-width: $tablet-width) {
-  //     padding: 0 31px;
-  //   }
-  // }
-
   &:not(:last-child) {
     margin-bottom: 28px;
 
@@ -100,5 +94,5 @@
 .about-list__text {
   font-size: 14px;
   line-height: 21px;
-  font-weight: 500;
+  font-weight: 400;
 }

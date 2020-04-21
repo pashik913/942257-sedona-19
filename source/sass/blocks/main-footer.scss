@@ -26,3 +26,16 @@
     margin-bottom: 0;
   }
 }
+
+.main-footer__copyright-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.main-footer__copyright-img {
+  display: block;
+
+  margin-left: 11px;
+}
