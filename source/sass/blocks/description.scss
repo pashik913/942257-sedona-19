@@ -4,16 +4,34 @@
   text-align: center;
 
   background-color: #eeeeee;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 20px;
+  }
 }
 
 .description-list__title {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .description-list__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0 50px;
+  }
+
   &:not(.description-list__item--no-bot-margin) {
     margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &:not(:last-child) {
@@ -26,6 +44,11 @@
 
   &:not(.description-list__text--no-bot-margin) {
     margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      line-height: 21px;
+    }
   }
 }
 

@@ -36,6 +36,10 @@
   display: block;
   width: 102px;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+  }
 }
 
 .page-header__toggle {
@@ -81,5 +85,12 @@
 
   &::before {
     top: -7px;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
   }
 }

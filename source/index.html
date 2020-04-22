@@ -29,7 +29,11 @@
 
       <div class="page-header__block">
         <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
-          <img class="page-header__logo" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          <picture>
+            <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+            <img class="page-header__logo" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          </picture>
         </a>
 
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">
@@ -42,7 +46,7 @@
       <h1 class="visually-hidden">Седона - рай для туриста</h1>
       <section class="advantages advantages--bot-margin container">
         <div class="advantages__bg">
-          <img class="advantages__title-img" width="281" height="214" class="page-header__back-img" src="img/text-sedona-index.svg" alt="Гранд каньон отдыхает">
+          <img class="advantages__title-img" width="281" height="214" src="img/text-sedona-index.svg" alt="Гранд каньон отдыхает">
         </div>
 
         <div class="advantages__wrapper">
@@ -57,14 +61,18 @@
 
       <section class="features">
         <div class="features__column-wrapper">
-          <div class="features__wrapper features__wrapper--bg-triangle container">
+          <div class="features__wrapper features__wrapper--bg-triangle">
             <h2 class="features__title">Настоящий городок</h2>
             <span class="features__serial-number">— № 1 —</span>
             <span class="features__text">
               Седона не аттаркион для туристов, там течет своя жизнь
             </span>
           </div>
-          <img  width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+          <picture class="features__picture-wrapper">
+            <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+            <img width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+          </picture>
         </div>
         <ul class="features__list about-list">
           <li class="about-list__item about-list__item--house">
@@ -82,13 +90,13 @@
           <li class="about-list__item about-list__item--burger">
             <h3 class="about-list__title">Еда</h3>
             <span class="about-list__text">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы не разочаруетесь!
             </span>
           </li>
         </ul>
       </section>
 
-      <section class="features features--bot-margin">
+      <section class="features">
         <div class="features__column-wrapper features__column-wrapper--reverse">
           <div class="features__wrapper">
             <h2 class="features__title">Там есть мост дьявола</h2>
@@ -97,11 +105,15 @@
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </span>
           </div>
-          <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          <picture class="features__picture-wrapper">
+            <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          </picture>
         </div>
         <ol class="features__list description-list">
           <li class="description-list__item">
-            <h2 class="description-list__title">Небольшая площидь</h2>
+            <h2 class="description-list__title">Небольшая площадь</h2>
             <span class="description-list__serial-number">— № 3 —</span>
             <p class="description-list__text">
               Все интересные места находятся очень близко
@@ -109,7 +121,7 @@
           </li>
 
           <li class="description-list__item">
-            <h2 class="description-list__title">Небольшая площидь</h2>
+            <h2 class="description-list__title">Красивая дорога</h2>
             <span class="description-list__serial-number">— № 4 —</span>
             <p class="description-list__text">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -117,7 +129,7 @@
           </li>
 
           <li class="description-list__item description-list__item--no-bot-margin">
-            <h2 class="description-list__title">Небольшая площидь</h2>
+            <h2 class="description-list__title">Мало туристов</h2>
             <span class="description-list__serial-number">— № 5 —</span>
             <p class="description-list__text description-list__text--no-bot-margin">
               Большинство едет в гранд каньон и толпится там
@@ -137,7 +149,11 @@
           <a class="reservation__link" href="#">Найти гостиницу</a>
         </div>
         <div class="reservation__map-wrapper">
-          <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" alt="Мы находимся здесь" width="320" height="350">
+          <picture>
+            <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 768px)">
+            <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" alt="Мы находимся здесь" width="320" height="350">
+          </picture>
         </div>
       </section>
     </main>
@@ -162,9 +178,9 @@
             </a>
           </li>
         </ul>
-        <a class="social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">
           Разработано
-          <svg class="social__copyright-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg class="main-footer__copyright-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
           </svg>
         </a>

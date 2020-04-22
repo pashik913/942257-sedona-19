@@ -1,5 +1,9 @@
 .advantages--bot-margin {
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .advantages__wrapper {
@@ -19,6 +23,10 @@
   position: relative;
   z-index: -1;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -30,6 +38,26 @@
     z-index: 1;
     background-image: url("../img/bg-intro-triangle-mobile.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+    &::before {
+      width: 768px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &::before {
+      width: 1200px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
 }
 
 .advantages__bg--position {
@@ -38,10 +66,19 @@
 
 .advantages__title-img {
   padding: 90px 0 72px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 84px 0;
+    width: 460px;
+  }
 }
 
 .advantages__title-img--padding {
   padding: 52px 0 54px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 94px 0 116px 0;
+  }
 }
 
 .advantages__title {
@@ -51,12 +88,17 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding: 0 65px;
+  }
 }
 
 .advantages__text {
   margin: 0;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
 }
