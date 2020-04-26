@@ -17,6 +17,19 @@
   &:not(:last-child) {
     margin-right: 6px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $onclick-color;
+
+    .social__img {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__link {
