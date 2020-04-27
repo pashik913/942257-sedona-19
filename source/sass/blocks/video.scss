@@ -4,9 +4,16 @@
 
 .video__wrapper {
   padding: 0 20px;
+  padding-top: 39px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 60px;
+    padding-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+    padding-top: 72px;
   }
 }
 
@@ -37,62 +44,52 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 800px;
     margin: 0 auto;
   }
 }
 
 .video__controls-wrapper {
-  margin: 0 20px;
-}
+  padding: 0 20px;
 
-.video__range-control {
-  position: relative;
-  display: block;
-  min-height: 45px;
-  margin-top: -45px;
-
-  background-color: #000000;
-  opacity: 0.6;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 88%;
-    height: 3px;
-    background-color: #ffffff;
-    opacity: 0.2;
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 20px;
-    left: 25%;
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    opacity: 1;
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
   }
 }
 
-.video__control-list {
-  @include reset-list;
-
-  min-height: 66px;
-  background-color: #ededed;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.video__control-item {
-  &:first-child {
-    margin-right: 40%;
-  }
-}
+// .video__range-control {
+//   position: relative;
+//   display: block;
+//   min-height: 45px;
+//   margin-top: -45px;
+//
+//   background-color: #000000;
+//   opacity: 0.6;
+//
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%);
+//     width: 88%;
+//     height: 3px;
+//     background-color: #ffffff;
+//     opacity: 0.2;
+//   }
+//
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     top: 20px;
+//     left: 25%;
+//     width: 10px;
+//     height: 10px;
+//     background-color: #ffffff;
+//     border-radius: 50%;
+//     opacity: 1;
+//   }
+// }
