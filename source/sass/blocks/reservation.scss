@@ -1,6 +1,7 @@
 .reservation__wrapper {
   text-align: center;
   margin-bottom: 49px;
+  padding: 0 20px;
   padding-top: 33px;
 
   @media (min-width: $tablet-width) {
@@ -44,6 +45,16 @@
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $onclick-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .reservation__map-img {

@@ -12,6 +12,16 @@
   color: #ffffff;
   padding: 45px 20px;
 
+  @media (min-width: $tablet-width) {
+    flex-basis: 33.4%;
+
+    padding: 31px 44px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &--bg-triangle {
     position: relative;
     padding-top: 80px;
@@ -30,16 +40,6 @@
         content: none;
       }
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    flex-basis: 33.4%;
-
-    padding: 31px 44px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 

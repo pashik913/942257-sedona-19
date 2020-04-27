@@ -31,6 +31,21 @@
       margin-left: 20%;
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
+
+    &:active {
+      background-color: $onclick-color;
+
+      .site-list__link {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }
 
 .site-list__link {
@@ -43,9 +58,33 @@
     min-width: 153px;
 
     color: #000000;
+
+    &:hover,
+    &:focus {
+      color: $theme-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 239px;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    color: $active-link-color;
+
+    &:hover,
+    &:focus {
+      color: $active-link-hover-color;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 }

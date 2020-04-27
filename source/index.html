@@ -13,7 +13,7 @@
       <nav class="page-header__nav">
         <ul class="site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -59,7 +59,7 @@
         </div>
       </section>
 
-      <section class="features">
+      <section class="features container">
         <div class="features__column-wrapper">
           <div class="features__wrapper features__wrapper--bg-triangle">
             <h2 class="features__title">Настоящий городок</h2>
@@ -69,9 +69,9 @@
             </span>
           </div>
           <picture class="features__picture-wrapper">
-            <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
-            <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
-            <img width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+            <source srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Городок Седона">
           </picture>
         </div>
         <ul class="features__list about-list">
@@ -96,7 +96,7 @@
         </ul>
       </section>
 
-      <section class="features">
+      <section class="features container">
         <div class="features__column-wrapper features__column-wrapper--reverse">
           <div class="features__wrapper">
             <h2 class="features__title">Там есть мост дьявола</h2>
@@ -106,9 +106,9 @@
             </span>
           </div>
           <picture class="features__picture-wrapper">
-            <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
-            <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-            <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+            <source srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
           </picture>
         </div>
         <ol class="features__list description-list">
@@ -131,15 +131,15 @@
           <li class="description-list__item description-list__item--no-bot-margin">
             <h2 class="description-list__title">Мало туристов</h2>
             <span class="description-list__serial-number">— № 5 —</span>
-            <p class="description-list__text description-list__text--no-bot-margin">
+            <p class="description-list__text">
               Большинство едет в гранд каньон и толпится там
             </p>
           </li>
         </ol>
       </section>
 
-      <section class="reservation">
-        <div class="reservation__wrapper container">
+      <section class="reservation container">
+        <div class="reservation__wrapper">
           <h2 class="reservation__title">Заинтересовались?</h2>
           <p class="reservation__text">
             Укажите предполагаемые даты поездки,
@@ -150,9 +150,9 @@
         </div>
         <div class="reservation__map-wrapper">
           <picture>
-            <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 1200px)">
-            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 768px)">
-            <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" alt="Мы находимся здесь" width="320" height="350">
+            <source srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Мы находимся здесь" width="320" height="350">
           </picture>
         </div>
       </section>
