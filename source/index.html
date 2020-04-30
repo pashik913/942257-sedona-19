@@ -9,6 +9,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display:none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
     <header class="page-header container">
       <nav class="page-header__nav">
         <ul class="site-list">
@@ -69,6 +72,11 @@
             </span>
           </div>
           <picture class="features__picture-wrapper">
+            <source type="image/webp" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x" media="(min-width: 1200px)">
+            <source type="image/webp" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+
+
             <source srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" media="(min-width: 1200px)">
             <source srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img width="320" height="260" class="features__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Городок Седона">
@@ -106,6 +114,10 @@
             </span>
           </div>
           <picture class="features__picture-wrapper">
+            <source type="image/webp" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x" media="(min-width: 1200px)">
+            <source type="image/webp" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
             <source srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
             <source srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="features__img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
@@ -150,6 +162,10 @@
         </div>
         <div class="reservation__map-wrapper">
           <picture>
+            <source type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x" media="(min-width: 1200px)">
+            <source type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
             <source srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 1200px)">
             <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Мы находимся здесь" width="320" height="350">
