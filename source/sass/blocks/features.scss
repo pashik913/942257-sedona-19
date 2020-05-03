@@ -26,6 +26,10 @@
     position: relative;
     padding-top: 80px;
 
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+
     &::before {
       position: absolute;
       content: "";
