@@ -33,7 +33,7 @@ gulp.task("webp", function (){
   });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("source/img/icons/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -90,9 +90,9 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series("css", "refresh"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
 gulp.task("refresh", function(done) {

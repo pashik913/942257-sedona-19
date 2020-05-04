@@ -11,6 +11,10 @@
 
     padding-top: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .main-footer__invite-text {
