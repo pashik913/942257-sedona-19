@@ -65,19 +65,19 @@
             <li>
               <label>
                 <span>Имя*:</span>
-                <input type="text" placeholder="Петр" name="" value="">
+                <input type="text" placeholder="Петр" name="user-name" required>
               </label>
             </li>
             <li>
               <label>
                 <span>Фамилия*:</span>
-                <input type="text" placeholder="Иванов" name="" value="">
+                <input type="text" placeholder="Иванов" name="user-last-name" required>
               </label>
             </li>
             <li>
               <label>
                 <span>Отчество:</span>
-                <input type="text" placeholder="Александрович" name="" value="">
+                <input type="text" placeholder="Александрович" name="user-patronymic">
               </label>
             </li>
           </ul>
@@ -88,13 +88,13 @@
             <li>
               <label>
                 <span>Контактный телефон*:</span>
-                <input type="tel" placeholder="Введите телефон" name="" value="">
+                <input type="tel" placeholder="Введите телефон" name="user-tel" required>
               </label>
             </li>
             <li>
               <label>
                 <span>"Электронная почта"*:</span>
-                <input type="email" placeholder="Введите e-mail" name="" value="">
+                <input type="email" placeholder="Введите e-mail" name="user-email" required>
               </label>
             </li>
           </ul>
@@ -154,7 +154,7 @@
         <fieldset>
           <legend>Опишите свои эмоции:</legend>
           <label>
-            <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea placeholder="Опишите подробно все свои восторги" name="user-text"></textarea>
           </label>
         </fieldset>
         <div class="">
