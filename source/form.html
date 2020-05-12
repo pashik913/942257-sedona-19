@@ -6,7 +6,7 @@
     <title>Седона</title>
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div style="display:none">
@@ -58,107 +58,117 @@
           </p>
         </div>
       </section>
-      <form class="" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend>Представьтесь:</legend>
-          <ul>
-            <li>
-              <label>
-                <span>Имя*:</span>
-                <input type="text" placeholder="Петр" name="user-name" required>
-              </label>
-            </li>
-            <li>
-              <label>
-                <span>Фамилия*:</span>
-                <input type="text" placeholder="Иванов" name="user-last-name" required>
-              </label>
-            </li>
-            <li>
-              <label>
-                <span>Отчество:</span>
-                <input type="text" placeholder="Александрович" name="user-patronymic">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <ul>
-            <li>
-              <label>
-                <span>Контактный телефон*:</span>
-                <input type="tel" placeholder="Введите телефон" name="user-tel" required>
-              </label>
-            </li>
-            <li>
-              <label>
-                <span>"Электронная почта"*:</span>
-                <input type="email" placeholder="Введите e-mail" name="user-email" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <ul>
-            <li>
-              <label>
-                <input type="radio" name="feedback-radio" value="good-emotion" checked>
-                <span>Скорее положительное</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="feedback-radio" value="bad-emotion">
-                <span>Скорее отрицательное</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="feedback-radio" value="no-emotion">
-                <span>Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Посещенные достопримечательности:</legend>
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="feedback-checkbox" value="devil-bridge" checked>
-                <span>Мост дьявола</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feedback-checkbox" value="mountain-bell" checked>
-                <span>Гора колокол</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feedback-checkbox" value="slide-park" checked>
-                <span>Слайд парк</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="feedback-checkbox" value="red-mountain">
-                <span>Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции:</legend>
-          <label>
-            <textarea placeholder="Опишите подробно все свои восторги" name="user-text"></textarea>
-          </label>
-        </fieldset>
-        <div class="">
-          <button class="" type="submit" aria-label="Отправить отзыв">Отправить отзыв</button>
+      <form class="form container" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Представьтесь:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__input-text">Имя*:</span>
+                  <input class="form__input" type="text" placeholder="Петр" name="name" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__input-text">Фамилия*:</span>
+                  <input class="form__input" type="text" placeholder="Иванов" name="last-name" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  <span class="form__input-text">Отчество:</span>
+                  <input class="form__input" type="text" placeholder="Александрович" name="user-patronymic">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактная информация:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label form__label--contacts">
+                  <span class="form__input-text form__input-text--contacts">Контактный телефон*:</span>
+                  <input class="form__input form__input--contacts" type="tel" placeholder="Введите телефон" name="tel" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label form__label--contacts form__label--mail">
+                  <span class="form__input-text form__input-text--contacts">Электронная почта*:</span>
+                  <input class="form__input form__input--contacts" type="email" placeholder="Введите e-mail" name="email" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваши общие впечатления:</legend>
+            <ul class="form__list">
+              <li>
+                <label>
+                  <input type="radio" name="feedback-radio" value="good-emotion" checked>
+                  <span class="form__input-text">Скорее положительное</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="feedback-radio" value="bad-emotion">
+                  <span class="form__input-text">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="feedback-radio" value="no-emotion">
+                  <span class="form__input-text">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Посещенные достопримечательности:</legend>
+            <ul class="form__list">
+              <li>
+                <label>
+                  <input type="checkbox" name="feedback-checkbox" value="devil-bridge" checked>
+                  <span>Мост дьявола</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="feedback-checkbox" value="mountain-bell" checked>
+                  <span>Гора колокол</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="feedback-checkbox" value="slide-park" checked>
+                  <span>Слайд парк</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="feedback-checkbox" value="red-mountain">
+                  <span>Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__fieldset-wrapper">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Опишите свои эмоции:</legend>
+            <label>
+              <textarea placeholder="Опишите подробно все свои восторги" name="user-text"></textarea>
+            </label>
+          </fieldset>
+        </div>
+        <div class="form__fieldset-wrapper">
+          <button class="" type="submit">Отправить отзыв</button>
           <span>* - Обязательные поля</span>
         </div>
       </form>
@@ -192,23 +202,23 @@
         </a>
       </div>
     </footer>
-    <div class="modal">
-      <div class="modal__block modal__block-submit-error">
-        <div class="modal__wrapper modal__wrapper-submit-error">
-          <h3 class="modal__title">Что-то пошло не так!</h3>
-          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        </div>
-        <button class="modal__button modal__button-submit-error" type="button" name="button">Ок</button>
+    <div class="modal modal--error">
+      <div class="modal__wrapper modal__wrapper--error">
+        <h3 class="modal__title modal__title--error">Что-то пошло не так!</h3>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
+      <div class="modal__button-bg modal__button-bg--error">
+        <button class="modal__button modal__button--error" type="button" name="button">Ок</button>
+      </div>
+    </div>
 
-      <div class="modal__block modal__block-submit-ok">
-        <div class="modal__wrapper modal__wrapper-submit-ok">
-          <h3 class="modal__title">Ваш отзыв отправлен!</h3>
-          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
-        </div>
-        <div class="modal__button-bg">
-          <button class="modal__button modal__button-submit-ok" type="button" name="button">Закрыть окно</button>
-        </div>
+    <div class="modal">
+      <div class="modal__wrapper">
+        <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__button-bg">
+        <button class="modal__button modal__button-submit-ok" type="button" name="button">Закрыть окно</button>
       </div>
     </div>
   </body>

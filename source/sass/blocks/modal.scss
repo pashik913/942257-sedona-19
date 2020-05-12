@@ -1,45 +1,28 @@
 .modal {
-  text-align: center;
-}
-
-.modal__block {
   background-color: #ffffff;
+  text-align: center;
   // position: fixed;
   // z-index: 1;
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);
   width: 320px;
-  display: flex;
-  flex-direction: column;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-}
 
-.modal__block-submit-ok {
   @media (min-width: $tablet-width) {
     width: 640px;
   }
-}
 
-.modal__block-submit-error {
-  @media (min-width: $tablet-width) {
-    width: 400px;
+  &--error {
+    @media (min-width: $tablet-width) {
+      width: 400px;
+    }
   }
-}
-
-.modal__wrapper-submit-error {
-  padding: 46px 55px 29px;
-}
-
-.modal__wrapper-submit-ok {
-  padding: 49px 50px 40px;
 }
 
 .modal__wrapper {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
-    margin-bottom: 40px;
-  }
+  padding: 49px 50px 0;
+  margin-bottom: 40px;
 }
 
 .modal__title {
@@ -52,6 +35,12 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     padding: 0 20px;
+  }
+
+  &--error {
+    @media (min-width: $tablet-width) {
+      padding: 0 25px;
+    }
   }
 }
 
@@ -66,11 +55,13 @@
   line-height: 26px;
 
   background-color: $theme-color;
+  margin: 0 auto;
   padding: 16px 20px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
   display: block;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -78,21 +69,20 @@
 }
 
 .modal__button-bg {
-  width: 100%;
+  display: flex;
   background-color: #f2f2f2;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 44px 91px;
   }
-}
 
-.modal__button-submit-error {
-  margin: 0 70px;
-  margin-bottom: 35px;
-}
+  &--error {
+    background-color: transparent;
+    padding: 0 70px 35px;
 
-.modal__button-submit-ok {
-  margin: 0 auto;
-  width: 100%;
+    @media (min-width: $tablet-width) {
+      padding: 0 64px 49px;
+    }
+  }
 }
