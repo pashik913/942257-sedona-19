@@ -107,22 +107,25 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">Ваши общие впечатления:</legend>
             <ul class="form__list">
-              <li>
-                <label>
-                  <input type="radio" name="feedback-radio" value="good-emotion" checked>
-                  <span class="form__input-text">Скорее положительное</span>
+              <li class="form__radio-item">
+                <label class="form__radio form__label">
+                  <input class="visually-hidden" type="radio" name="feedback-radio" value="good-emotion" checked>
+                  <span class="form__radio-indicator"></span>
+                  <span class="form__input-text form__input-text--radio">Скорее положительное</span>
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="radio" name="feedback-radio" value="bad-emotion">
-                  <span class="form__input-text">Скорее отрицательное</span>
+              <li class="form__radio-item">
+                <label class="form__radio form__label">
+                  <input class="visually-hidden" type="radio" name="feedback-radio" value="bad-emotion">
+                  <span class="form__radio-indicator"></span>
+                  <span class="form__input-text form__input-text--radio">Скорее отрицательное</span>
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="radio" name="feedback-radio" value="no-emotion">
-                  <span class="form__input-text">Затрудняюсь ответить</span>
+              <li class="form__radio-item">
+                <label class="form__label form__radio">
+                  <input class="visually-hidden" type="radio" name="feedback-radio" value="no-emotion">
+                  <span class="form__radio-indicator"></span>
+                  <span class="form__input-text form__input-text--radio">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -131,29 +134,33 @@
         <div class="form__fieldset-wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
-            <ul class="form__list">
-              <li>
-                <label>
-                  <input type="checkbox" name="feedback-checkbox" value="devil-bridge" checked>
-                  <span>Мост дьявола</span>
+            <ul class="form__list radio__list">
+              <li class="form__checkbox-item">
+                <label class="form__label form__checkbox">
+                  <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="devil-bridge" checked>
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__input-text form__input-text--checkbox">Мост дьявола</span>
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="feedback-checkbox" value="mountain-bell" checked>
-                  <span>Гора колокол</span>
+              <li class="form__checkbox-item">
+                <label class="form__label form__checkbox">
+                  <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="mountain-bell" checked>
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__input-text form__input-text--checkbox">Гора колокол</span>
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="feedback-checkbox" value="slide-park" checked>
-                  <span>Слайд парк</span>
+              <li class="form__checkbox-item">
+                <label class="form__label form__checkbox">
+                  <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="slide-park" checked>
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__input-text form__input-text--checkbox">Слайд парк</span>
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="feedback-checkbox" value="red-mountain">
-                  <span>Красные скалы</span>
+              <li class="form__checkbox-item">
+                <label class="form__label form__checkbox">
+                  <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="red-mountain">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__input-text form__input-text--checkbox">Красные скалы</span>
                 </label>
               </li>
             </ul>
