@@ -51,7 +51,7 @@
           <img class="advantages__title-img advantages__title-img--padding" width="281" height="214" src="img/text-sedona.svg" alt="Гранд каньон отдыхает">
         </div>
         <div class="advantages__wrapper">
-          <h2 class="advantages__title">Оставьте свой отзыв</h2>
+          <h2 class="advantages__title advantages__title--font">Оставьте свой отзыв</h2>
           <p class="advantages__text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них,
             а также о посещенных вами достопримечательностях
@@ -59,7 +59,7 @@
         </div>
       </section>
       <form class="form container" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--introduce">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Представьтесь:</legend>
             <ul class="form__list">
@@ -84,26 +84,26 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Контактная информация:</legend>
-            <ul class="form__list">
-              <li class="form__item">
+            <legend class="form__legend form__legend-decoline">Контактная информация:</legend>
+            <ul class="form__list form__list-contacts">
+              <li class="form__item form__item-contacts">
                 <label class="form__label form__label--contacts">
-                  <span class="form__input-text form__input-text--contacts">Контактный телефон*:</span>
+                  <span class="form__input-text form__input-text--contacts"><span class="form__text-hide">Контактный</span> телефон*:</span>
                   <input class="form__input form__input--contacts" type="tel" placeholder="Введите телефон" name="tel" required>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item-contacts">
                 <label class="form__label form__label--contacts form__label--mail">
-                  <span class="form__input-text form__input-text--contacts">Электронная почта*:</span>
+                  <span class="form__input-text form__input-text-width form__input-text--contacts">Электронная почта*:</span>
                   <input class="form__input form__input--contacts" type="email" placeholder="Введите e-mail" name="email" required>
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--order">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Ваши общие впечатления:</legend>
             <ul class="form__list">
@@ -131,32 +131,32 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--sight">
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Посещенные достопримечательности:</legend>
-            <ul class="form__list radio__list">
-              <li class="form__checkbox-item">
+            <legend class="form__legend form__legend-decoline">Посещенные<br>достопримечательности:</legend>
+            <ul class="form__list form__list--sight">
+              <li class="form__checkbox-item form__checkbox-item--sight">
                 <label class="form__label form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="devil-bridge" checked>
                   <span class="form__checkbox-indicator"></span>
                   <span class="form__input-text form__input-text--checkbox">Мост дьявола</span>
                 </label>
               </li>
-              <li class="form__checkbox-item">
+              <li class="form__checkbox-item form__checkbox-item--sight">
                 <label class="form__label form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="mountain-bell" checked>
                   <span class="form__checkbox-indicator"></span>
                   <span class="form__input-text form__input-text--checkbox">Гора колокол</span>
                 </label>
               </li>
-              <li class="form__checkbox-item">
+              <li class="form__checkbox-item form__checkbox-item--sight">
                 <label class="form__label form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="slide-park" checked>
                   <span class="form__checkbox-indicator"></span>
                   <span class="form__input-text form__input-text--checkbox">Слайд парк</span>
                 </label>
               </li>
-              <li class="form__checkbox-item">
+              <li class="form__checkbox-item form__checkbox-item--sight">
                 <label class="form__label form__checkbox">
                   <input class="visually-hidden" type="checkbox" name="feedback-checkbox" value="red-mountain">
                   <span class="form__checkbox-indicator"></span>
@@ -166,17 +166,17 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--textarea">
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Опишите свои эмоции:</legend>
-            <label>
-              <textarea placeholder="Опишите подробно все свои восторги" name="user-text"></textarea>
+            <legend class="form__legend form__legend-decoline">Опишите свои эмоции:</legend>
+            <label class="form__label">
+              <textarea class="form__textarea form__input" placeholder="Опишите подробно все свои восторги" name="user-text"></textarea>
             </label>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
-          <button class="" type="submit">Отправить отзыв</button>
-          <span>* - Обязательные поля</span>
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--textarea form__fieldset-wrapper--no-border">
+          <button class="button form__button" type="submit">Отправить отзыв</button>
+          <span class="form__info-text">* - Обязательные поля</span>
         </div>
       </form>
     </main>
@@ -215,7 +215,7 @@
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <div class="modal__button-bg modal__button-bg--error">
-        <button class="modal__button modal__button--error" type="button" name="button">Ок</button>
+        <button class="button modal__button--error" type="button" name="button">Ок</button>
       </div>
     </div>
 
@@ -225,7 +225,7 @@
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
       </div>
       <div class="modal__button-bg">
-        <button class="modal__button modal__button-submit-ok" type="button" name="button">Закрыть окно</button>
+        <button class="button modal__button-submit-ok" type="button" name="button">Закрыть окно</button>
       </div>
     </div>
   </body>
