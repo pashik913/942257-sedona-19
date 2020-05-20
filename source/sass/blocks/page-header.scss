@@ -1,5 +1,6 @@
 .page-header {
   text-align: center;
+  position: relative;
 }
 
 .page-header__index-back-img {
@@ -21,7 +22,6 @@
 
 .page-header__block {
   height: 56px;
-  position: relative;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -46,9 +46,8 @@
   @include reset-button;
 
   position: absolute;
-  top: 50%;
+  top: 17px;
   right: 20px;
-  transform: translateY(-50%);
   width: 23px;
   height: 21px;
   cursor: pointer;
@@ -77,6 +76,9 @@
     width: 23px;
     height: 3px;
     background-color: $theme-color;
+
+    transform-origin: 50% 50%;
+    transition: top 0.3s 0.3s, transform 0.3s;
   }
 
   &::after {
@@ -93,4 +95,41 @@
     width: 187px;
     height: 96px;
   }
+}
+
+.page-header--no-js .page-header__toggle {
+  display: none;
+}
+
+.page-header__nav {
+  @media (max-width: 767.9px) {
+    display: none;
+  }
+}
+
+.page-header--opened .page-header__nav {
+  display: block;
+}
+
+.page-header--opened .page-header__toggle {
+  .page-header__toggle-line {
+    &::after,
+    &::before {
+      top: 0;
+      background-color: #ffffff;
+      transition: top 0.3s, transform 0.3s  0.3s;
+    }
+
+    &::after {
+    transform: rotate(45deg);
+    }
+
+    &::before {
+    transform: rotate(-45deg);
+    }
+  }
+}
+
+.page-header--no-js .page-header__nav {
+  display: block;
 }

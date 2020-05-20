@@ -35,18 +35,6 @@
   }
 }
 
-.reservation__link {
-  &:hover,
-  &:focus {
-    background-color: $hover-color;
-  }
-
-  &:active {
-    background-color: $onclick-color;
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
 .reservation__map-img {
   width: 100%;
   display: block;

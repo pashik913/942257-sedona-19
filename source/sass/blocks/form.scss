@@ -20,28 +20,28 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border-top: none;
+  }
 
-    &--order {
-      order: -1;
-      border-right: 1px solid #f2f2f2;
+  &--sight {
+    flex-basis: 100%;
+  }
 
-      @media (min-width: $tablet-width) {
-        padding-right: 43px;
-        flex-basis: 50%;
-      }
+  &--contacts {
+    flex-basis: 100%;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 75px;
+      margin-bottom: 58px;
     }
+  }
 
-    &--contacts {
-      flex-basis: 100%;
+  &--order {
+    order: -1;
+    border-right: 1px solid #f2f2f2;
 
-      @media (min-width: $tablet-width) {
-        margin-top: 75px;
-        margin-bottom: 58px;
-      }
-    }
-
-    &--sight {
-      flex-basis: 100%;
+    @media (min-width: $tablet-width) {
+      padding-right: 43px;
+      flex-basis: 50%;
     }
   }
 
@@ -75,6 +75,12 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  &--introduce {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
 }
 
 .form__list {
@@ -84,18 +90,19 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    justify-content: space-between;
   }
 
-  @media (min-width: $tablet-width) {
-    &--sight {
+  &--sight {
+    @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    @media (min-width: $desktop-width) {
+      justify-content: space-between;
+    }
   }
 }
 
@@ -108,10 +115,8 @@
 .form__radio-item {
   &:not(:last-child) {
     margin-bottom: 23px;
-  }
 
-  @media (min-width: $tablet-width) {
-    &:not(:last-child) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 20px;
     }
   }
@@ -123,7 +128,8 @@
   display: block;
 
   &--contacts {
-    margin: 0 0 14px 21px;
+    margin-left: 21px;
+    margin-bottom: 14px;
 
     @media (min-width: $desktop-width) {
       margin: 0;
@@ -224,7 +230,7 @@
   padding: 16px 0;
 }
 
-.form__radio input[type="radio"] + .form__radio-indicator {
+.form__input[type="radio"] + .form__radio-indicator {
   position: absolute;
   content: "";
   width: 46px;
@@ -236,7 +242,7 @@
   border-radius: 50%;
 }
 
-.form__radio input[type="radio"]:checked + .form__radio-indicator::before {
+.form__input[type="radio"]:checked + .form__radio-indicator::before {
   position: absolute;
   content: "";
   width: 16px;
@@ -248,16 +254,16 @@
   border-radius: 50%;
 }
 
-.form__radio input[type="radio"]:hover + .form__radio-indicator,
-.form__radio input[type="radio"]:focus + .form__radio-indicator {
+.form__input[type="radio"]:hover + .form__radio-indicator,
+.form__input[type="radio"]:focus + .form__radio-indicator {
   background-color: #e5e5e5;
 }
 
-.form__radio input[type="radio"]:active + .form__radio-indicator {
+.form__input[type="radio"]:active + .form__radio-indicator {
   background-color: #d5d5d5;
 }
 
-.form__radio input[type="radio"]:active + .form__radio-indicator::before {
+.form__input[type="radio"]:active + .form__radio-indicator::before {
   opacity: 0.3;
 }
 
@@ -267,20 +273,20 @@
 
   @media (min-width: $tablet-width) {
     min-width: 200px;
+  }
 
-    &--sight {
-      &:nth-child(2n+1) {
-        margin-right: 74px;
+  &--sight {
+    &:nth-child(2n+1) {
+      margin-right: 74px;
 
-        @media (min-width: $tablet-width) {
-          margin-right: 0;
-        }
+      @media (min-width: $desktop-width) {
+        margin-right: 0;
       }
     }
   }
 }
 
-.form__checkbox input[type="checkbox"] + .form__checkbox-indicator {
+.form__input[type="checkbox"] + .form__checkbox-indicator {
   position: absolute;
   content: "";
   width: 46px;
@@ -292,7 +298,7 @@
   border-radius: 5px;
 }
 
-.form__checkbox input[type="checkbox"]:checked + .form__checkbox-indicator::before {
+.form__input[type="checkbox"]:checked + .form__checkbox-indicator::before {
   position: absolute;
   content: "";
   width: 23px;
@@ -303,16 +309,16 @@
   background-image: url("../img/icon-tick.svg");
 }
 
-.form__checkbox input[type="checkbox"]:hover + .form__checkbox-indicator,
-.form__checkbox input[type="checkbox"]:focus + .form__checkbox-indicator {
+.form__input[type="checkbox"]:hover + .form__checkbox-indicator,
+.form__input[type="checkbox"]:focus + .form__checkbox-indicator {
   background-color: #e5e5e5;
 }
 
-.form__checkbox input[type="checkbox"]:active + .form__checkbox-indicator {
+.form__input[type="checkbox"]:active + .form__checkbox-indicator {
   background-color: #d5d5d5;
 }
 
-.form__checkbox input[type="checkbox"]:active + .form__checkbox-indicator::before {
+.form__input[type="checkbox"]:active + .form__checkbox-indicator::before {
   opacity: 0.3;
 }
 
@@ -336,32 +342,15 @@
 }
 
 .form__button {
-  font-weight: 700;
-
   @media (min-width: $tablet-width) {
     width: 324px;
   }
-}
-
-.form__button:hover,
-.form__button:focus {
-  background-color: $hover-color;
-  cursor: pointer;
-}
-
-.form__button:active {
-  background-color: $onclick-color;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .form__fieldset-wrapper--introduce {
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
     padding-left: 58px;
-
-    .form__legend {
-      text-align: left;
-    }
   }
 
   @media (min-width: $desktop-width) {

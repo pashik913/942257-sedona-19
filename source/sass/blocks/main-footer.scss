@@ -2,19 +2,20 @@
   text-align: center;
   padding: 0 20px;
   padding-top: 41px;
-  padding-bottom: 23px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
 
-    padding-top: 36px;
+    padding: 36px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    padding: 0 120px;
+    padding: 36px 120px;
+
   }
 }
 
