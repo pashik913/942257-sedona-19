@@ -54,13 +54,8 @@
   font-size: 18px;
   line-height: 26px;
 
-  background-color: $theme-color;
-  margin: 0 auto;
   padding: 16px 20px;
   text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 700;
-  display: block;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
