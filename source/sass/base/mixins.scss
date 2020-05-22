@@ -13,3 +13,9 @@
   font: inherit;
   background-color: transparent;
 }
+
+@mixin reset-fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

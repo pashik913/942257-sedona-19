@@ -35,28 +35,6 @@
   }
 }
 
-.reservation__link {
-  background-color: $theme-color;
-  display: block;
-
-  padding: 16px 0;
-  min-height: 58px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
-
-  &:hover,
-  &:focus {
-    background-color: $hover-color;
-  }
-
-  &:active {
-    background-color: $onclick-color;
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
 .reservation__map-img {
   width: 100%;
   display: block;

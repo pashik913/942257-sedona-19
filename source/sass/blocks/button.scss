@@ -1,0 +1,27 @@
+.button {
+  @include reset-button;
+
+  background-color: $theme-color;
+  display: block;
+
+  padding: 16px 0;
+  margin: 0 auto;
+  min-height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $onclick-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
