@@ -364,21 +364,28 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
 
-    &::before,
-    &::after {
+
+  &::before,
+  &::after {
+    @media (min-width: $tablet-width) {
       content: "";
       width: 50px;
       height: 1px;
       background-color: #e6e6e6;
       flex-grow: 1;
     }
+  }
 
-    &::before {
+  &::before {
+    @media (min-width: $tablet-width) {
       margin-right: 50px;
     }
+  }
 
-    &::after {
+  &::after {
+    @media (min-width: $tablet-width) {
       margin-left: 50px;
     }
   }
@@ -394,12 +401,15 @@
 .form__item-contacts {
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
+  }
 
-    &:nth-child(2n+1) {
+  &:nth-child(2n+1) {
+    @media (min-width: $desktop-width) {
       padding-right: 79px;
     }
   }
 }
+
 
 .form__text-hide {
   @media (min-width: $desktop-width) {
