@@ -9,7 +9,7 @@
 }
 
 .video__wrapper {
-  padding-top: 39px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
@@ -35,7 +35,9 @@
 }
 
 .video__text {
-  margin: 40px 0;
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 35px;
   padding: 0 5px;
   color: #333333;
 
@@ -73,23 +75,6 @@
   background-color: #000000;
   opacity: 0.6;
 
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%);
-  //   width: 88%;
-  //   height: 3px;
-  //   background-color: #ffffff;
-  //   opacity: 0.2;
-  //
-  //   @media (min-width: $tablet-width) {
-  //     width: 60.4%;
-  //     left: 44.5%;
-  //   }
-  // }
-  //
   @media (min-width: $tablet-width) {
     min-height: 93px;
 
@@ -103,8 +88,8 @@
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0 auto;
 
-  top: 21px;
-  width: 88%;
+  top: 22px;
+  width: 84%;
   height: 3px;
 
   @media (min-width: $tablet-width) {
@@ -119,10 +104,10 @@
 
   position: absolute;
   top: -3px;
-  left: 25%;
+  left: 15.3%;
 
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   background-color: #ffffff;
   border-radius: 50%;
 
@@ -135,7 +120,7 @@
 .video__control-toggles-wrapper {
   min-height: 66px;
   margin: 0 20px;
-  padding: 0 5%;
+  padding: 0 7.5%;
 
   display: flex;
   align-items: center;
@@ -153,10 +138,12 @@
 
 .video__control-button {
   @include reset-button;
+
+  margin-top: 6px;
 }
 
 .video__button-margin {
-  margin-left: 52%;
+  margin-left: 45%;
 
   @media (min-width: $tablet-width) {
     margin-left: 75%;
