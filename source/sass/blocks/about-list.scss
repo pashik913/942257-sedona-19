@@ -56,33 +56,33 @@
       width: 37px;
       height: 36px;
       background-image: url("../img/icon-house.svg");
-  
+
       @media (min-width: $tablet-width) {
         width: 75px;
         height: 72px;
       }
     }
   }
-  
+
   &--gift {
     @media (min-width: $tablet-width) {
       order: 1;
     }
-    
+
     &::before {
       top: -2px;
       left: 5px;
       width: 32px;
       height: 38px;
       background-image: url("../img/icon-gift.svg");
-  
+
       @media (min-width: $tablet-width) {
         top: -80px;
         left: 50%;
         width: 63px;
         height: 75px;
       }
-   }
+    }
   }
 
   &--burger::before {

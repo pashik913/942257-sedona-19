@@ -98,7 +98,7 @@
 
   &--sight {
     margin-bottom: 31px;
-    
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
@@ -286,7 +286,7 @@
 
 .form__checkbox-item {
   padding: 10px 0;
-  
+
   &:not(:last-child) {
     margin-bottom: 34px;
   }
@@ -413,7 +413,7 @@
 
 .form__list-contacts {
   margin-bottom: 28px;
-  
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
