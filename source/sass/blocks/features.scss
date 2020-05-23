@@ -22,11 +22,20 @@
     justify-content: center;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 15px 85px;
+  }
+
   &--bg-triangle {
     position: relative;
     padding-top: 76px;
 
     @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 15px 55px;
       padding-top: 0;
     }
 
@@ -56,6 +65,10 @@
 .features__img {
   width: 100%;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    height: 256px;
+  }
 }
 
 .features__text {
@@ -72,6 +85,18 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
+    margin-top: 9px;
+  }
+
+  &--padding {
+    @media (min-width: $tablet-width) {
+      margin-top: 2px;
+      padding: 0 9px;
+    }
   }
 }
 

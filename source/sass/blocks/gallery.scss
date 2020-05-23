@@ -59,6 +59,10 @@
 .gallery__link {
   display: block;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__img {
@@ -90,6 +94,19 @@
   position: relative;
   font-weight: 700;
   padding-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    padding-bottom: 3px;
+  }
+
+  &--padding {
+    padding-right: 9px;
+  }
+
+  &--s-padding {
+    padding-right: 16px;
+  }
 }
 
 .gallery__like-icon {
@@ -104,7 +121,11 @@
 .gallery__text-wrapper {
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
-    padding: 21px 20px;
+    padding: 14px 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {

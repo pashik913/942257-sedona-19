@@ -7,9 +7,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    padding: 36px;
+    padding: 36px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +50,10 @@
       fill: #000000;
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
   }
 }
 

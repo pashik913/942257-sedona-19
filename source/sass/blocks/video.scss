@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
-    padding-top: 68px;
+    padding-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +42,9 @@
   color: #333333;
 
   @media (min-width: $tablet-width) {
-    padding: 0 165px;
+    padding: 0 84px;
+    margin-top: 31px;
+    margin-bottom: 74px;
   }
 }
 
@@ -113,7 +115,7 @@
 
   @media (min-width: $tablet-width) {
     top: -3px;
-    left: 31.5%;
+    left: 29%;
   }
 }
 
@@ -132,7 +134,8 @@
     margin: 0;
 
     background-color: transparent;
-    margin-top: -76px;
+    margin-top: -79px;
+    padding: 0 38px;
   }
 }
 
