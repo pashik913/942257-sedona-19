@@ -43,6 +43,7 @@
       border-right: 1px solid #f2f2f2;
       padding-right: 51px;
       flex-basis: 50%;
+      max-width: 50%;
     }
   }
 
@@ -227,6 +228,7 @@
   font-weight: 700;
   outline: transparent;
   width: 100%;
+  height: 58px;
 
   border: 0;
   background-color: #f2f2f2;
@@ -421,6 +423,7 @@
 .form__fieldset-wrapper--introduce {
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
+    max-width: 50%;
     padding-left: 58px;
   }
 
@@ -475,6 +478,7 @@
 .form__item-contacts {
   @media (min-width: $desktop-width) {
     flex-basis: 50%;
+    max-width: 50%;
   }
 
   &:first-child {
