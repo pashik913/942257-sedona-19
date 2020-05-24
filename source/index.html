@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body>
     <div style="display:none">
@@ -54,7 +55,7 @@
 
         <div class="advantages__wrapper">
           <h2 class="advantages__title">
-            Седона - Небольшой городок в аризоне, заслуживающий большего!
+            Седона &ndash; Небольшой городок в аризоне, заслуживающий большего!
           </h2>
           <p class="advantages__text">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -66,9 +67,9 @@
         <div class="features__column-wrapper">
           <div class="features__wrapper features__wrapper--bg-triangle">
             <h2 class="features__title">Настоящий городок</h2>
-            <span class="features__serial-number">— № 1 —</span>
+            <span class="features__serial-number">&ndash; № 1 &ndash;</span>
             <span class="features__text">
-              Седона не аттаркион для туристов, там течет своя жизнь
+              Седона не аттрaкцион для туристов, там течет своя жизнь
             </span>
           </div>
           <picture class="features__picture-wrapper">
@@ -85,12 +86,12 @@
         <ul class="features__list about-list">
           <li class="about-list__item about-list__item--house">
             <h3 class="about-list__title">Жилье</h3>
-            <span class="about-list__text">
+            <span class="about-list__text about-list__text-padding">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </span>
           </li>
           <li class="about-list__item about-list__item--gift">
-            <h3 class="about-list__title">Суверины</h3>
+            <h3 class="about-list__title">Сувениры</h3>
             <span class="about-list__text">
               Не только китайского, но и местного производства!
             </span>
@@ -107,8 +108,8 @@
       <section class="features container">
         <div class="features__column-wrapper features__column-wrapper--reverse">
           <div class="features__wrapper">
-            <h2 class="features__title">Там есть мост дьявола</h2>
-            <span class="features__serial-number">— № 2 —</span>
+            <h2 class="features__title features__title--padding">Там есть<br class="features__br">мост дьявола</h2>
+            <span class="features__serial-number">&ndash; № 2 &ndash;</span>
             <span class="features__text">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </span>
@@ -126,7 +127,7 @@
         <ol class="features__list description-list">
           <li class="description-list__item">
             <h2 class="description-list__title">Небольшая площадь</h2>
-            <span class="description-list__serial-number">— № 3 —</span>
+            <span class="description-list__serial-number">&ndash; № 3 &ndash;</span>
             <p class="description-list__text">
               Все интересные места находятся очень близко
             </p>
@@ -134,15 +135,15 @@
 
           <li class="description-list__item">
             <h2 class="description-list__title">Красивая дорога</h2>
-            <span class="description-list__serial-number">— № 4 —</span>
-            <p class="description-list__text">
+            <span class="description-list__serial-number">&ndash; № 4 &ndash;</span>
+            <p class="description-list__text description-list__text-padding">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
 
           <li class="description-list__item description-list__item--no-bot-margin">
-            <h2 class="description-list__title">Мало туристов</h2>
-            <span class="description-list__serial-number">— № 5 —</span>
+            <h2 class="description-list__title description-list__title--padding">Мало туристов</h2>
+            <span class="description-list__serial-number">&ndash; № 5 &ndash;</span>
             <p class="description-list__text">
               Большинство едет в гранд каньон и толпится там
             </p>
@@ -154,7 +155,7 @@
         <div class="reservation__wrapper">
           <h2 class="reservation__title">Заинтересовались?</h2>
           <p class="reservation__text">
-            Укажите предполагаемые даты поездки,
+            Укажите предполагаемые даты поездки, <br class="reservation__br">
             и мы покажем вам лучшие предложения
             гостиниц в седоне
           </p>
@@ -170,6 +171,7 @@
             <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="reservation__map-img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Мы находимся здесь" width="320" height="350">
           </picture>
+          <iframe class="reservation__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985535.3444918816!2d-112.54763891230638!3d35.205270535493376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1590319449418!5m2!1sru!2s" width="1200" height="1000" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
@@ -180,17 +182,17 @@
         <ul class="main-footer__list social">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в твиттер">
-              <img class="social__img" src="img/icon-twitter.svg" alt="Мы в твиттер">
+              <img class="social__img" width="18" height="14" src="img/icon-twitter.svg" alt="Мы в твиттер">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в фейсбук">
-              <img class="social__img" src="img/icon-facebook.svg" alt="Мы в фейсбук">
+              <img class="social__img" width="9" height="18" src="img/icon-facebook.svg" alt="Мы в фейсбук">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы на ютуб">
-              <img class="social__img" src="img/icon-youtube.svg" alt="Мы в ютуб">
+              <img class="social__img" width="20" height="14"  src="img/icon-youtube.svg" alt="Мы в ютуб">
             </a>
           </li>
         </ul>

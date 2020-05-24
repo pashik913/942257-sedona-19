@@ -28,23 +28,31 @@
 
 .gallery__item {
   border-top: 1px solid #d6d6d6;
-  padding: 22px 20px;
+  padding: 0 20px;
+  padding-top: 22px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     border: 0;
     padding: 0;
-
-    &:first-child {
-      width: 100%;
-    }
-
-    &:not(:first-child) {
-      width: 50%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    &:not(:first-child) {
+    position: relative;
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &:not(:first-child) {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 33.3%;
     }
   }
@@ -56,6 +64,11 @@
 
 .gallery__link {
   display: block;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__img {
@@ -65,13 +78,14 @@
 
 .gallery__title {
   margin: 0;
+  font-size: 14px;
 }
 
 .gallery__author {
   display: block;
   text-transform: none;
 
-  margin-bottom: 19px;
+  margin-bottom: 8px;
 
   color: #333333;
 
@@ -86,6 +100,19 @@
   position: relative;
   font-weight: 700;
   padding-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    padding-bottom: 3px;
+  }
+
+  &--padding {
+    padding-right: 9px;
+  }
+
+  &--s-padding {
+    padding-right: 16px;
+  }
 }
 
 .gallery__like-icon {
@@ -100,19 +127,25 @@
 .gallery__text-wrapper {
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
-    padding: 21px 20px;
+    padding: 14px 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     padding: 16px 20px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
-    margin-top: -80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    position: relative;
+    width: 100%;
   }
 }

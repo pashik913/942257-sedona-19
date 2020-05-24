@@ -59,7 +59,7 @@
 
 .page-header__toggle-line {
   position: absolute;
-  top: 9px;
+  top: 10px;
   right: 0;
   width: 23px;
   height: 3px;
@@ -102,7 +102,7 @@
 }
 
 .page-header__nav {
-  @media (max-width: 767.9px) {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
@@ -111,22 +111,20 @@
   display: block;
 }
 
-.page-header--opened {
-  .page-header__toggle-line {
-    &::after,
-    &::before {
-      top: 0;
-      background-color: #ffffff;
-      transition: top 0.3s, transform 0.3s  0.3s;
-    }
+.page-header--opened .page-header__toggle-line {
+  &::after,
+  &::before {
+    top: 0;
+    background-color: #ffffff;
+    transition: top 0.3s, transform 0.3s  0.3s;
+  }
 
-    &::after {
-      transform: rotate(45deg);
-    }
+  &::after {
+    transform: rotate(45deg);
+  }
 
-    &::before {
-      transform: rotate(-45deg);
-    }
+  &::before {
+    transform: rotate(-45deg);
   }
 }
 
