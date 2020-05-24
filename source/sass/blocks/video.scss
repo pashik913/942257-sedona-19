@@ -2,6 +2,10 @@
   text-align: center;
 
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .video__text-wrapper {
@@ -45,6 +49,11 @@
     padding: 0 84px;
     margin-top: 31px;
     margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 163px;
+    margin-bottom: 69px;
   }
 }
 
@@ -99,6 +108,11 @@
     width: 60.4%;
     right: 5.5%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 67.4%;
+    right: 4.8%;
+  }
 }
 
 .video__range-button {
@@ -116,6 +130,10 @@
   @media (min-width: $tablet-width) {
     top: -3px;
     left: 29%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 21%;
   }
 }
 
@@ -135,7 +153,13 @@
 
     background-color: transparent;
     margin-top: -79px;
-    padding: 0 38px;
+    padding: 0 36px;
+    padding-right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 34px;
+    padding-right: 43px;
   }
 }
 
@@ -149,7 +173,11 @@
   margin-left: 45%;
 
   @media (min-width: $tablet-width) {
-    margin-left: 75%;
+    margin-left: 78%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 82%;
   }
 }
 
