@@ -182,7 +182,9 @@
 }
 
 .video__button-icon {
-  fill: #5c6870;
+  @media (max-width: $mobile-width-only) {
+    fill: #5c6870;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -190,4 +192,25 @@
 
     fill: #ffffff;
   }
+}
+
+.video__control-button:hover .video__button-icon,
+.video__control-button:focus .video__button-icon,
+.video__range-button {
+  cursor: pointer;
+}
+
+.video__control-button:hover .video__button-icon,
+.video__control-button:focus .video__button-icon {
+  @media (max-width: $mobile-width-only) {
+    fill: #333333;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.video__control-button:active .video__button-icon {
+  opacity: 0.3;
 }
