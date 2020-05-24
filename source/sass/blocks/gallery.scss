@@ -42,12 +42,12 @@
 
     &:not(:first-child) {
       width: 50%;
-    }
-  }
 
-  @media (min-width: $desktop-width) {
-    &:not(:first-child) {
-      width: 33.3%;
+      @media (min-width: $desktop-width) {
+        &:not(:first-child) {
+          width: 33.3%;
+        }
+      }
     }
   }
 }

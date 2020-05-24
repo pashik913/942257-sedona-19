@@ -1,10 +1,10 @@
 .form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0 60px;
     margin-bottom: 60px;
   }
@@ -144,10 +144,8 @@
 
 .form__list-radio {
   margin-bottom: 27px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 17px;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__item {
@@ -246,18 +244,17 @@
     background-color: #ffffff;
   }
 
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+  }
+
   &--contacts {
     padding-right: 58px;
     width: 100%;
-    // margin-bottom: 5px;
   }
-}
-
-.form__input::placeholder {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
 }
 
 .form__input-text--checkbox,
@@ -271,7 +268,7 @@
 }
 
 .form__input-text--radio {
-  margin-left: 60px;
+  margin-left: 79px;
 }
 
 .form__input-text--checkbox {
@@ -288,13 +285,13 @@
   width: 56px;
   height: 56px;
   top: 52%;
-  left: -18px;
+  left: 0;
   transform: translateY(-50%);
   background-color: #f2f2f2;
   border-radius: 50%;
 
   @media (min-width: $desktop-width) {
-    left: -13px;
+    left: 4px;
   }
 }
 
@@ -326,20 +323,20 @@
 .form__checkbox-item {
   padding: 10px 0;
 
-  &:not(:last-child) {
-    margin-bottom: 34px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 42px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     min-width: 200px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: auto;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 42px;
+    }
   }
 
   &--sight {
@@ -478,16 +475,16 @@
 }
 
 .form__item-contacts {
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+  }
+
   &:first-child {
     margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 24px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-basis: 50%;
   }
 
   &:nth-child(2n+1) {

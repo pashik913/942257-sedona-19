@@ -66,7 +66,7 @@
               <li class="form__item">
                 <label class="form__label">
                   <span class="form__input-text">Имя*:</span>
-                  <input class="form__input" type="text" placeholder="Петр" name="name" required>
+                  <input class="form__input" pattern="^[\sA-Za-zА-Яа-яЁё]{2,}$" type="text" placeholder="Петр" name="name" required>
                 </label>
               </li>
               <li class="form__item">
@@ -91,13 +91,13 @@
               <li class="form__item form__item-contacts">
                 <label class="form__label form__label--contacts">
                   <span class="form__input-text form__input-text--contacts"><span class="form__text-hide">Контактный</span> телефон*:</span>
-                  <input class="form__input form__input--contacts" type="tel" placeholder="Введите телефон" name="tel" required>
+                  <input class="form__input form__input--contacts" pattern="^[0-9(\-+)\s]+$" type="tel" placeholder="Введите телефон" name="tel" required>
                 </label>
               </li>
               <li class="form__item form__item-contacts">
                 <label class="form__label form__label--contacts form__label--mail">
                   <span class="form__input-text form__input-text-width form__input-text--contacts">Электронная почта*:</span>
-                  <input class="form__input form__input--contacts" type="email" placeholder="Введите e-mail" name="email" required>
+                  <input class="form__input form__input--contacts" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" type="email" placeholder="Введите e-mail" name="email" required>
                 </label>
               </li>
             </ul>
@@ -187,17 +187,17 @@
         <ul class="main-footer__list social">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в твиттер">
-              <img class="social__img" src="img/icon-twitter.svg" alt="Мы в твиттер">
+              <img class="social__img" width="18" height="14" src="img/icon-twitter.svg" alt="Мы в твиттер">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы в фейсбук">
-              <img class="social__img" src="img/icon-facebook.svg" alt="Мы в фейсбук">
+              <img class="social__img" width="9" height="18" src="img/icon-facebook.svg" alt="Мы в фейсбук">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мы на ютуб">
-              <img class="social__img" src="img/icon-youtube.svg" alt="Мы в ютуб">
+              <img class="social__img" width="20" height="14"  src="img/icon-youtube.svg" alt="Мы в ютуб">
             </a>
           </li>
         </ul>
@@ -209,7 +209,7 @@
         </a>
       </div>
     </footer>
-    <div class="modal modal--error">
+    <div class="modal modal__error modal--error">
       <div class="modal__wrapper modal__wrapper--error">
         <h3 class="modal__title modal__title--error">Что-то пошло не так!</h3>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -219,7 +219,7 @@
       </div>
     </div>
 
-    <div class="modal">
+    <div class="modal modal--success">
       <div class="modal__wrapper">
         <h3 class="modal__title">Ваш отзыв отправлен!</h3>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
